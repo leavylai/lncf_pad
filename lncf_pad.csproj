@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6331B91A-A32E-4C67-AA05-1053ADA4B175}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cf_pad</RootNamespace>
+    <AssemblyName>cf_pad</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>stm.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CFPublic">
+      <HintPath>..\CFPublic\bin\Debug\CFPublic.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v11.2.Core, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v11.2.Core, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v11.2.Core, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="RKLib.ExportData, Version=1.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\RKLib.ExportData.dll</HintPath>
+    </Reference>
+    <Reference Include="RUI.PC.Verify, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\RUI.PC.Verify.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLS\clsBs_Dep.cs" />
+    <Compile Include="CLS\clsCheckOutQty.cs" />
+    <Compile Include="CLS\clsCommonUse.cs" />
+    <Compile Include="CLS\clsMo_for_jx.cs" />
+    <Compile Include="CLS\clsProductionSchedule.cs" />
+    <Compile Include="CLS\clsProductQCRecords.cs" />
+    <Compile Include="CLS\clsPublicOfGeo.cs" />
+    <Compile Include="CLS\clsPublicOfPad.cs" />
+    <Compile Include="CLS\clsPrdTransfer.cs" />
+    <Compile Include="CLS\clsShowProductionPlan.cs" />
+    <Compile Include="CLS\clsStoreIssue.cs" />
+    <Compile Include="CLS\clsTakeMoSample.cs" />
+    <Compile Include="CLS\clsUser.cs" />
+    <Compile Include="CLS\clsUtility.cs" />
+    <Compile Include="CLS\clsValidRule.cs" />
+    <Compile Include="CLS\ExpToExcel.cs" />
+    <Compile Include="CLS\NewBarCodeHook.cs" />
+    <Compile Include="DBUtility.cs" />
+    <Compile Include="Forms\frmKeyboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKeyboard.Designer.cs">
+      <DependentUpon>frmKeyboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmMachineStdQty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmMachineStdQty.designer.cs">
+      <DependentUpon>frmMachineStdQty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPrdSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPrdSchedule.designer.cs">
+      <DependentUpon>frmPrdSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPrdSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPrdSelect.designer.cs">
+      <DependentUpon>frmPrdSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProductionSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProductionSchedule.designer.cs">
+      <DependentUpon>frmProductionSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmProductionSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmProductionSelect.designer.cs">
+      <DependentUpon>frmProductionSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmShowPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmShowPlan.Designer.cs">
+      <DependentUpon>frmShowPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainForPad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainForPad.designer.cs">
+      <DependentUpon>frmMainForPad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDL\mdlUser.cs" />
+    <Compile Include="MDL\product_qc_records.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\xrDelivery.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrDelivery.designer.cs">
+      <DependentUpon>xrDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrIpqcList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrIpqcList.designer.cs">
+      <DependentUpon>xrIpqcList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrIpqc_ng.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrIpqc_ng.Designer.cs">
+      <DependentUpon>xrIpqc_ng.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrIqcOp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrIqcOp.Designer.cs">
+      <DependentUpon>xrIqcOp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrPacking.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrPacking.Designer.cs">
+      <DependentUpon>xrPacking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrPackingLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrPackingLabel.Designer.cs">
+      <DependentUpon>xrPackingLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrPrdTransfer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrPrdTransfer.designer.cs">
+      <DependentUpon>xrPrdTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrQcFinishReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrQcFinishReport.Designer.cs">
+      <DependentUpon>xrQcFinishReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xrQcPacking.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xrQcPacking.Designer.cs">
+      <DependentUpon>xrQcPacking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\xtaWork_No_BarCode.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\xtaWork_No_BarCode.designer.cs">
+      <DependentUpon>xtaWork_No_BarCode.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\frmKeyboard.resx">
+      <DependentUpon>frmKeyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMachineStdQty.resx">
+      <DependentUpon>frmMachineStdQty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrdSchedule.resx">
+      <DependentUpon>frmPrdSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPrdSelect.resx">
+      <DependentUpon>frmPrdSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProductionSchedule.resx">
+      <DependentUpon>frmProductionSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmProductionSelect.resx">
+      <DependentUpon>frmProductionSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmShowPlan.resx">
+      <DependentUpon>frmShowPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainForPad.resx">
+      <DependentUpon>frmMainForPad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\xrDelivery.resx">
+      <DependentUpon>xrDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrIpqcList.resx">
+      <DependentUpon>xrIpqcList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrIpqc_ng.resx">
+      <DependentUpon>xrIpqc_ng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrIqcOp.resx">
+      <DependentUpon>xrIqcOp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrPacking.resx">
+      <DependentUpon>xrPacking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrPackingLabel.resx">
+      <DependentUpon>xrPackingLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrPrdTransfer.resx">
+      <DependentUpon>xrPrdTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrQcFinishReport.resx">
+      <DependentUpon>xrQcFinishReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xrQcPacking.resx">
+      <DependentUpon>xrQcPacking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\xtaWork_No_BarCode.resx">
+      <DependentUpon>xtaWork_No_BarCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\RKLib.ExportData.dll" />
+    <Content Include="DLL\RUI.PC.Verify.dll" />
+    <Content Include="stm.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
